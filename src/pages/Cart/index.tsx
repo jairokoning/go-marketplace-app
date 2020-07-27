@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import FeatherIcon from 'react-native-vector-icons/Feather';
+import MdIcon from 'react-native-vector-icons/MaterialIcons';
 
 import { View } from 'react-native';
 
@@ -21,6 +22,8 @@ import {
   TotalProductsContainer,
   TotalProductsText,
   SubtotalValue,
+  EmptyCart,
+  EmptyCartText,
 } from './styles';
 
 import { useCart } from '../../hooks/cart';
@@ -69,49 +72,56 @@ const Cart: React.FC = () => {
   return (
     <Container>
       <ProductContainer>
-        <ProductList
-          data={products}
-          keyExtractor={item => item.id}
-          ListFooterComponent={<View />}
-          ListFooterComponentStyle={{
-            height: 80,
-          }}
-          renderItem={({ item }: { item: Product }) => (
-            <Product>
-              <ProductImage source={{ uri: item.image_url }} />
-              <ProductTitleContainer>
-                <ProductTitle>{item.title}</ProductTitle>
-                <ProductPriceContainer>
-                  <ProductSinglePrice>
-                    {formatValue(item.price)}
-                  </ProductSinglePrice>
+        {products.length > 0 ? (
+          <ProductList
+            data={products}
+            keyExtractor={item => item.id}
+            ListFooterComponent={<View />}
+            ListFooterComponentStyle={{
+              height: 80,
+            }}
+            renderItem={({ item }: { item: Product }) => (
+              <Product>
+                <ProductImage source={{ uri: item.image_url }} />
+                <ProductTitleContainer>
+                  <ProductTitle>{item.title}</ProductTitle>
+                  <ProductPriceContainer>
+                    <ProductSinglePrice>
+                      {formatValue(item.price)}
+                    </ProductSinglePrice>
 
-                  <TotalContainer>
-                    <ProductQuantity>{`${item.quantity}x`}</ProductQuantity>
+                    <TotalContainer>
+                      <ProductQuantity>{`${item.quantity}x`}</ProductQuantity>
 
-                    <ProductPrice>
-                      {formatValue(item.price * item.quantity)}
-                    </ProductPrice>
-                  </TotalContainer>
-                </ProductPriceContainer>
-              </ProductTitleContainer>
-              <ActionContainer>
-                <ActionButton
-                  testID={`increment-${item.id}`}
-                  onPress={() => handleIncrement(item.id)}
-                >
-                  <FeatherIcon name="plus" color="#E83F5B" size={16} />
-                </ActionButton>
-                <ActionButton
-                  testID={`decrement-${item.id}`}
-                  onPress={() => handleDecrement(item.id)}
-                >
-                  <FeatherIcon name="minus" color="#E83F5B" size={16} />
-                </ActionButton>
-              </ActionContainer>
-            </Product>
-          )}
-        />
+                      <ProductPrice>
+                        {formatValue(item.price * item.quantity)}
+                      </ProductPrice>
+                    </TotalContainer>
+                  </ProductPriceContainer>
+                </ProductTitleContainer>
+                <ActionContainer>
+                  <ActionButton
+                    testID={`increment-${item.id}`}
+                    onPress={() => handleIncrement(item.id)}
+                  >
+                    <FeatherIcon name="plus" color="#E83F5B" size={16} />
+                  </ActionButton>
+                  <ActionButton
+                    testID={`decrement-${item.id}`}
+                    onPress={() => handleDecrement(item.id)}
+                  >
+                    <FeatherIcon name="minus" color="#E83F5B" size={16} />
+                  </ActionButton>
+                </ActionContainer>
+              </Product>
+            )}
+          />
+        ) : (
+          <EmptyCart>
+            <MdIcon name="remove-shopping-cart" color="#a0a0b3" size={64} />
+            <EmptyCartText>Seu carrinho está vazio</EmptyCartText>
+          </EmptyCart>
+        )}
       </ProductContainer>
       <TotalProductsContainer>
         <FeatherIcon name="shopping-cart" color="#fff" size={24} />

@@ -113,3 +113,14 @@ export const SubtotalValue = styled.Text`
   color: #fff;
   font-weight: bold;
 `;
+
+export const EmptyCart = styled.View`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const EmptyCartText = styled.Text`
+  font-size: 24px;
+  color: #a0a0b3;
+`;

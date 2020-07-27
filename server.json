@@ -1,28 +1,88 @@
 {
   "products": [
     {
-      "id": "123",
-      "title": "Nome do produto 01",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 50
+      "id": "1",
+      "title": "Sapato Calvin Clein",
+      "image_url": "https://i.pinimg.com/564x/ec/01/e3/ec01e3ce7db2374d22ea8aab873c32ca.jpg",
+      "price": 350
     },
     {
-      "id": "1234",
-      "title": "Nome do produto 02",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 60
+      "id": "2",
+      "title": "Sapato Social Calvest",
+      "image_url": "https://i.pinimg.com/564x/d2/80/3b/d2803b2be82f3af05a5272790ed47a90.jpg",
+      "price": 460
     },
     {
-      "id": "12345",
-      "title": "Nome do produto 03",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
+      "id": "3",
+      "title": "Sapato Formal Professional",
+      "image_url": "https://i.pinimg.com/564x/b1/e2/07/b1e207cbda869f67f57b49b3217fc9b7.jpg",
+      "price": 270
+    },
+    {
+      "id": "4",
+      "title": "Bota Inverno Femenino",
+      "image_url": "https://i.pinimg.com/564x/3a/54/0b/3a540b3d0603c379a7cb12d036dc4ad0.jpg",
+      "price": 190
+    },
+    {
+      "id": "5",
+      "title": "Tênis Air",
+      "image_url": "https://i.pinimg.com/564x/49/3c/57/493c57518eae40afe2038a6a9f904780.jpg",
+      "price": 160
+    },
+    {
+      "id": "6",
+      "title": "Tênis Nike",
+      "image_url": "https://i.pinimg.com/564x/52/c8/fa/52c8fa1ad66307348275894efac39104.jpg",
+      "price": 220
+    },
+    {
+      "id": "7",
+      "title": "Tênis Puma",
+      "image_url": "https://i.pinimg.com/564x/7b/cf/a9/7bcfa960b363bfbdc3285145323611d0.jpg",
+      "price": 340
+    },
+    {
+      "id": "8",
+      "title": "Camisa Social Slim",
+      "image_url": "https://i.pinimg.com/564x/98/80/de/9880de4eee19c173b2424b85554927c0.jpg",
+      "price": 90
+    },
+    {
+      "id": "9",
+      "title": "Jaqueta Femenino",
+      "image_url": "https://i.pinimg.com/564x/fe/2d/72/fe2d7235692a4aa3e3607c3bc2ca1f0f.jpg",
+      "price": 260
+    },
+    {
+      "id": "10",
+      "title": "Conjunto Femenino Verão",
+      "image_url": "https://i.pinimg.com/564x/58/52/4c/58524c660f9e5591d0222ddd48811941.jpg",
+      "price": 410
+    },
+    {
+      "id": "11",
+      "title": "Camisa Manga Longa",
+      "image_url": "https://i.pinimg.com/564x/03/c3/5f/03c35f6f8127c98bba1bf7d162f318d0.jpg",
+      "price": 160
+    },
+    {
+      "id": "12",
+      "title": "Camiseta Blue Steel",
+      "image_url": "https://i.pinimg.com/564x/c8/13/d3/c813d375b6a07117b6a4fd2efccde956.jpg",
       "price": 70
     },
     {
-      "id": "123456",
-      "title": "Nome do produto 04",
-      "image_url": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/camiseta-ecommerce.jpg",
-      "price": 80
+      "id": "13",
+      "title": "Camiseta Navy",
+      "image_url": "https://i.pinimg.com/564x/26/60/9c/26609c214d41e10bf0e1bfd6c106771f.jpg",
+      "price": 90
+    },
+    {
+      "id": "14",
+      "title": "Boné Beisebol",
+      "image_url": "https://i.pinimg.com/564x/00/a3/9c/00a39cee5b327b877b5cea949fa098e1.jpg",
+      "price": 50
     }
   ]
 }
