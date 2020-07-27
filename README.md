@@ -1,8 +1,9 @@
 
 
 
-
-<img alt="GoStack Challenge" src="https://raw.githubusercontent.com/jairokoning/go-marketplace-app/master/src/assets/go-marketplace.gif" />
+<h1 align="center">
+  <img alt="GoStack Challenge" src="https://raw.githubusercontent.com/jairokoning/go-marketplace-app/master/src/assets/go-marketplace.gif" />
+</h1>
 
 <h3 align="center">
   Challenge 08: React Native Concepts
@@ -10,7 +11,7 @@
 
 ## :rocket: About the challenge
 
-In this challenge, i developed the **GoMarketplace,** a mobile application with React Native to train the concepts learned during the Bootcamp GoStack 11 promoted by [Rocketseat](https://rocketseat.com.br/)!
+In this challenge, I developed the **GoMarketplace,** a mobile application with React Native to train the concepts learned during the Bootcamp GoStack 11 promoted by [Rocketseat](https://rocketseat.com.br/)!
 
 This application shows a list of items coming from a fake data API and allows add products to the Cart and increment/decrement product quantity . More info about the challenge you can find [here](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/desafio-fundamentos-react-native)
 
